@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="/img/perf2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="/stilo/syte.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site aula</title>
@@ -16,7 +17,16 @@
             <a href="">EMPRESA</a>
             <a href="">CONTATO</a>
         </div>
+        <div class="hamburger">
+            <i class="fa fa-bars"></i>
+        </div>
     </header>
+
+    <nav class="mobile-menu">
+        <a href="">HOME</a>
+        <a href="">EMPRESA</a>
+        <a href="">CONTATO</a>
+    </nav>
     <!--fim cabeçario-->   
     <!--inicio meio-->
     <main class="meio">
@@ -39,9 +49,15 @@
     </section>
 
     <footer class="rodape">
-        <img src="/img/icon_face.png" alt="" width="80"> <i>Facebook</i> 
-        <img src="/img/icon_insta.png" alt="" width="100"><i>Instagram</i> 
-        <img src="/img/icon_what.png" alt="" width="90"><i>Whatsapp</i> 
+        <i class="fa fa-facebook">Facebook</i>      
+        <i class="fa fa-instagram"> Instagram</i>  
+        <i class="fa fa-whatsapp">Whatsapp</i> 
     </footer> 
+
+<script>
+    const hamburger = document.querySelector ('.hamburger')
+    const mobileMenu = document.querySelector ('.mobile.menu')
+</script>
+
 </body>
 </html>

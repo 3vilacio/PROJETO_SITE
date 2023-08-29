@@ -35,6 +35,39 @@ body{
     margin-left: 20px;
 }
 
+.hamburger{
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+.mobile-menu{
+    display: none;
+    flex-direction: column;
+    background-color: aquamarine;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 150px;
+    text-align: center;
+    border: 1 solid blue;
+    z-index: 1;
+}
+
+@media only screen and (max-widht: 768px){
+    .menu{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .mobile-menu.active{
+        display: flex;
+    }
+}
+
 .meio{
     background-color: rgb(194, 209, 214);
     padding: 10px;
@@ -99,6 +132,4 @@ body{
     background-color: rgba(16, 165, 115, 0.774);
     padding: 60px;
     margin-top: 20px;
-    font-size: 20px;
-    text-align-last:left;
 }
