@@ -77,14 +77,12 @@ body{
     box-sizing: border-box;
 }
 
-
 /*Adiciona regras de media query para ajustar o layout em diferentes tamanhos de tela*/
 @media(min-width: 768px){
     .cell{
         justify-content: space-around; /*espaçamento entre as células em telas maiores*/
     }
 }
-
 .infor{
     color: rgb(197, 218, 211);
     font-size: 20px;
@@ -101,4 +99,6 @@ body{
     background-color: rgba(16, 165, 115, 0.774);
     padding: 60px;
     margin-top: 20px;
+    font-size: 20px;
+    text-align-last:left;
 }
