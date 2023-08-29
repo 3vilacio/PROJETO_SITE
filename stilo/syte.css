@@ -69,8 +69,22 @@ body{
 .cell{
     margin-top: 50px;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.cel{
+    box-sizing: border-box;
+}
+
+
+/*Adiciona regras de media query para ajustar o layout em diferentes tamanhos de tela*/
+@media(min-width: 768px){
+    .cell{
+        justify-content: space-around; /*espaçamento entre as células em telas maiores*/
+    }
+}
+
 .infor{
     color: rgb(197, 218, 211);
     font-size: 20px;
